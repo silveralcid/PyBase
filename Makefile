@@ -11,13 +11,13 @@ lint:
 	$(PYTHON) -m black .
 	$(PYTHON) -m isort .
 	$(PYTHON) -m flake8
-	@echo ✅ Code style clean
+	@echo Code style clean!
 
 ## Run tests (pytest)
 test:
 	@echo 🧪 Running tests...
 	$(PYTHON) -m pytest -q
-	@echo ✅ Tests complete
+	@echo Tests complete!
 
 ## Clean build/test artifacts
 clean:
@@ -25,7 +25,7 @@ clean:
 	-@rmdir /s /q __pycache__ 2>nul || true
 	-@rmdir /s /q .pytest_cache 2>nul || true
 	-@del /s /q *.pyc 2>nul || true
-	@echo ✅ Clean complete
+	@echo Clean complete!
 
 ## Check installed tool versions
 check-tools:
@@ -33,7 +33,7 @@ check-tools:
 	$(PYTHON) -m black --version
 	$(PYTHON) -m flake8 --version
 	$(PYTHON) -m isort --version
-	@echo ✅ Tools verified
+	@echo Tools verified!
 
 ## Run any Python script (pass file=path)
 # Example: make run file=server.py
