@@ -1,0 +1,11 @@
+# Core dependencies
+
+
+# Development & testing
+pytest
+# pytest-asyncio
+black
+flake8
+isort
+mypy
+pre-commit
