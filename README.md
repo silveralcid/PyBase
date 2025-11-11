@@ -35,7 +35,7 @@ Use this as your base for any Python project — from quick scripts to FastAPI o
 ### Installation
 ```bash
 # Clone the base scaffold
-git clone https://github.com/sillveralcid/pybase.git my_project
+git clone https://github.com/silveralcid/pybase.git my_project
 cd my_project
 
 # Create and activate a virtual environment
