@@ -34,32 +34,53 @@ Use this as your base for any Python project — from quick scripts to FastAPI o
 
 ### Installation
 ```bash
+# Clone the base scaffold
 git clone https://github.com/sillveralcid/pybase.git my_project
 cd my_project
+
+# Create and activate a virtual environment
 python -m venv .venv
-pip install -r requirements.txt
+# On Windows (PowerShell)
+.venv\Scripts\activate
+# On macOS/Linux
+source .venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt -r requirements-dev.txt
+
+# Enable pre-commit hooks
 pre-commit install
 ````
 
-Then verify:
+Then verify your environment:
 
 ```bash
 make lint
 make test
 ```
 
-## ⚙️ Usage
+If everything passes, you’re ready to start building.
+
+### Usage for New Projects
 
 When you clone **PyBase** for a new project:
 
 1. Update this README — replace “PyBase” with your project’s name.
-2. Change Git remote:
+2. Change your Git remote:
 
    ```bash
    git remote remove origin
    git remote add origin https://github.com/<yourname>/<yourproject>.git
+   git remote -v  # confirm
    ```
-3. Start coding.
+3. Start coding with a clean slate:
+
+   ```bash
+   make lint
+   make test
+   pre-commit run --all-files
+   ```
+
 
 ## 🧩 Makefile Commands
 
