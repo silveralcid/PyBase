@@ -33,6 +33,7 @@ Use this as your base for any Python project — from quick scripts to FastAPI o
 - (Optional) `make` for automated commands
 
 ### Installation
+
 ```bash
 # Clone the base scaffold
 git clone https://github.com/silveralcid/pybase.git my_project
